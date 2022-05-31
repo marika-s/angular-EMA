@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
+import { SharedModule } from '../shared/shared.module';
+import { EmployeesService } from './employees.service';
 
 
 
@@ -9,7 +11,11 @@ import { EmployeesListComponent } from './employees-list/employees-list.componen
     EmployeesListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
+  ],
+  providers: [
+    EmployeesService
   ]
 })
 export class EmployeesModule { }
