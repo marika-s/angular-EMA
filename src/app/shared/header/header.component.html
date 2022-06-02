@@ -1,1 +1,9 @@
-<p>header works!</p>
+<div class="card bg-light m-4">
+    <h1 class="display-4 mt-4 mx-4">
+        <ng-content select="[title]"></ng-content>
+    </h1>
+    <p class="lead mt-4 mx-4">
+        <ng-content select="[description]"></ng-content>
+    </p>
+    <hr class="my-4"/>
+</div>
